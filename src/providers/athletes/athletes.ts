@@ -6,7 +6,7 @@ import "rxjs/add/operator/map";
 
 @Injectable()
 export class AthletesProvider {
-  private apiUrl: string = ENV.config().apiUrl;
+  private apiUrl: string = ENV.config("prod").apiUrl;
   private uri: string = `${this.apiUrl}/athletes`;
 
   constructor(private http: Http) {}
