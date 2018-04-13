@@ -82,10 +82,8 @@
       </ion-list>
     </ng-container>
   
-    <ng-container padding class="results" *ngIf="resultsPublished==false">
-      <h3>Results are coming soon</h3>
-      <p>"Remember, boys, no points for second place."</p>
-      <p>"It takes a lot more than just fancy skiing to win this."</p>
-    </ng-container>
+    <div *ngIf="resultsPublished==false" style="height: 100%; overflow: hidden;">
+      <img src="../../assets/imgs/no-results.png">
+    </div>
   
   </ion-content>

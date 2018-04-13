@@ -2,9 +2,12 @@ page-athlete {
   
   .img-circle {
     border-radius: 50%;
-    margin-top: 10%;
-    width: 55%;
+    margin-top: 5%;
+    width: 60%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 3px #ddd;
   }
+
   .athlete {
     text-align: center;
     background-image: url("./../assets/imgs/flat-mouintan-bg-small.png");
@@ -45,9 +48,18 @@ page-athlete {
   }
 
   .notActive {
-    background-color: #fff;
-    color: #eee;
-    border-top: 1px solid #eee; 
+    background-color: #eee;
+    color: #fff;
+  }
+
+  .thankYou {
+    background-color: #408b91;
+    color: #fff;
+  }
+
+  .closed {
+    background-color: #ff6b6b;
+    color: #fff;
   }
   
 }
