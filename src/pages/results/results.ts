@@ -21,8 +21,17 @@ export class ResultsPage {
     this.resultsProvider
       .all()
       .subscribe(results => {
+        this.validResults = [];
+        this.invalidResults = [];
         this.resultsPublished = results.data[0].attributes.hasraced
-      });
+        for (var i: number = 0; i < results.data.length; i++) {
+          if (results.data[i].attributes.validscore == true) {
+            this.validResults.push(results.data[i])
+          } else {
+            this.invalidResults.push(results.data[i])
+          }
+        }
+      });  
 
     setTimeout(() => {
       refresher.complete();

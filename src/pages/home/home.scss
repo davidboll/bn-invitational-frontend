@@ -1,9 +1,26 @@
 page-home {
-
     .ski {
-        width: 20%;
-        height: auto;
-        margin: 5%;
+        text-align: center;
+        width: 45%;
+    }
+
+    .item {
+        background: none;
+        text-align: center;
+    }
+
+    .headerOne {
+        font-size: 5vh;
+        font-weight: bolder;
+        color: white;
+        // text-shadow: 2px 2px 4px #000000;
+    }
+
+    .headerThree {
+        font-size: 3.5vh;
+        font-weight: bolder;
+        color: white;
+        // text-shadow: 2px 2px 4px #000000;
     }
 
     @keyframes animatedBackground {
@@ -17,15 +34,14 @@ page-home {
     }
 
     .scroll-content{
-
         background-image: url(./../assets/imgs/bg_landscape-hd.png);
         background-position: 0px 0px;
         background-repeat: repeat-x;
-      background-size:cover;
-        -webkit-animation:animatedBackground 240s linear infinite;
-       -moz-animation:animatedBackground 240s linear infinite;
-        -ms-animation:animatedBackground 240s linear infinite;
-         -o-animation:animatedBackground 240s linear infinite;
-            animation:animatedBackground 240s linear infinite;
+        background-size:cover;
+        -webkit-animation:animatedBackground 300s linear infinite;
+           -moz-animation:animatedBackground 300s linear infinite;
+            -ms-animation:animatedBackground 300s linear infinite;
+             -o-animation:animatedBackground 300s linear infinite;
+                animation:animatedBackground 300s linear infinite;
     }
 }
